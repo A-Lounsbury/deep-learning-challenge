@@ -1,4 +1,5 @@
 # Overview
+The purpose of this analysis is to build a deep learning model that is capable of categorizing a record of data into one of two classes: successful or not successful, with an accuracy of at least 75%. 
 
 # Results
 ## Data Preprocessing
@@ -6,6 +7,8 @@
 The `IS_SUCCESSFUL` variable is the target for our model. 
 <!-- What variable(s) are the features for your model? -->
 The features of our model are `APPLICATION_TYPE`	`AFFILIATION`, `CLASSIFICATION`, `USE_CASE`, `ORGANIZATION`, `STATUS`, `INCOME_AMT`	`SPECIAL_CONSIDERATIONS`, and `ASK_AMT`. 
+
+![origial data set](images/1.png)
 
 Although, we dropped the columns `AFFILIATION`, `USE_CASE`, and `SPECIAL_CONSIDERATIONS` in a later attempt to improve the accuracy of our model. 
 
@@ -17,6 +20,11 @@ We selected 100 neurons for the first hidden layer, 80 neurons for the second hi
 
 <!-- Were you able to achieve the target model performance? -->
 We were only able to achieve a model performance of 73.32% accuracy, which is only about 1% better than the original accuracy. 
+```
+268/268 - 0s - loss: 0.5580 - accuracy: 0.7332 - 488ms/epoch - 2ms/step
+Loss: 0.5579628348350525, Accuracy: 0.7331778407096863
+```
+In any case, including when we used auto-optimization, we had a high amount of loss, which indicates that the model can be further improved. 
 
 <!-- What steps did you take in your attempts to increase model performance? -->
 To increase model performance, we added a few more hidden layers and increased the number of neurons in each layer, changed the activation functions of each layer, and removed more columns from the original data set. 
