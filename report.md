@@ -7,6 +7,8 @@ The `IS_SUCCESSFUL` variable is the target for our model.
 <!-- What variable(s) are the features for your model? -->
 The features of our model are `APPLICATION_TYPE`	`AFFILIATION`, `CLASSIFICATION`, `USE_CASE`, `ORGANIZATION`, `STATUS`, `INCOME_AMT`	`SPECIAL_CONSIDERATIONS`, and `ASK_AMT`. 
 
+Although, we dropped the columns `AFFILIATION`, `USE_CASE`, and `SPECIAL_CONSIDERATIONS` in a later attempt to improve the accuracy of our model. 
+
 <!-- What variable(s) should be removed from the input data because they are neither targets nor features? -->
 The variables `EIN` and `NAME` should be removed from the input data because they are neither targets nor features. 
 ## Compiling, Training and Evaluating the Model
